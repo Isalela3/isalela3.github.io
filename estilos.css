@@ -1,0 +1,47 @@
+
+section{
+    width: 1060px;
+    margin: 20px auto;
+    align-items: center;
+}
+section{
+    align-items: center;
+}
+img{
+    width: 250px;
+    height: auto;
+    
+}
+figure{
+    background: white;
+    display: inline-block;
+    margin: 0;
+    padding: 10px 10px 30px;
+    border-radius: 3px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    position: relative;
+    filter: blur(1px) saturate(50%);
+    transition: all 350ms ease-in-out;
+}
+figure:nth-of-type(4n+4) {/* 4,8*/ 
+    transform: rotate(7deg);
+}
+figure:nth-of-type(4n+1){/*1,5,9*/
+    transform: rotate(-8deg);
+}
+figure:nth-of-type(4n-6){/*2,6*/
+    transform: rotate(20deg);
+}
+figure:nth-of-type(4n-1){/*3,7*/
+    transform: rotate(-15deg);
+}
+figure:hover{
+    transform: rotate(0) scale(1.5,1.5);
+    z-index: 10;
+    filter: blur(0) saturate(100%);
+}
+figcaption{
+    position: relative;
+    top: 14px;
+    color: rgba(0, 0, 0, 0.6);
+}
